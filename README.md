@@ -29,5 +29,5 @@ Same logic as `_without`, but this time you specify which columns you want to in
 ## _no_relationships
 You can specify that you want to ignore all embedded relationships with the `_no_relationships` parameter. `/api/fake/products?_no_relationships=1` will not return the `category` entity inside the response.
 
-## Column name
+## Filtering
 You can also pass in a column name with a value to filter by value. `/api/fake/products?title=title-1` will only return entries where the `title` field is equal to `title-1`. Also works with relationships, so you can do something like `/api/fake/products?categories__id=1`, the format for this is `entityName__fieldName`.
