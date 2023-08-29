@@ -4,7 +4,79 @@ Placeholder API endpoints for PDP dashboard.
 Utilizes [Faker](https://github.com/fzaninotto/Faker) for dummy data.
 
 
-## Endpoint settings
+## Endpoint
+
+```http
+   GET https://pdpmock.facemapping.me/api/fake/products
+
+   ### Expect code 200   
+   Content-Type: application/json
+
+    {
+        "current_page": 1,
+        "data": [
+            {
+                "id": 9,
+                "title": "impedit",
+                "product_image": "https:\/\/via.placeholder.com\/640x480.png\/0066dd?text=nesciunt",
+                "link_to_pdp": "http:\/\/www.satterfield.org\/",
+                "market": "BB",
+                "product_name": "fuga",
+                "conversion": 7,
+                "rank_conversion": 6,
+                "product_avg_rank_conversion": 8,
+                "cross_market_product_index_conversion": 3,
+                "units_sold": 6,
+                "page_views": 7,
+                "percent_sales": 564.5,
+                "rank_sales": 1,
+                "product_avg_rank_sale": 35646.6,
+                "cross_market_product_index_sales": 1495299.1,
+                "first_price": 35.3,
+                "byline": "Dolores iste laudantium molestias amet voluptatibus error qui. Minus quidem quisquam nemo numquam officia vitae nostrum. Quia vero debitis voluptates atque nulla eos reprehenderit.",
+                "sizes_available": "tempora",
+                "first_size": "beatae",
+                "rating": 180494910,
+                "reviews_count": 1,
+                "description": "Maiores dolorem exercitationem quia. Dolore ex non qui rerum voluptatibus. Quia magni ad veritatis reprehenderit.",
+                "category": {
+                    "id": 1,
+                    "name": "non",
+                    "image": "https:\/\/via.placeholder.com\/640x480.png\/00ddee?text=suscipit"
+                }
+            }
+        ],
+        "first_page_url": "?page=1",
+        "from": 1,
+        "last_page": 1,
+        "last_page_url": "?page=1",
+        "links": [
+            {
+                "url": null,
+                "label": "&laquo; Previous",
+                "active": false
+            },
+            {
+                "url": "?page=1",
+                "label": "1",
+                "active": true
+            },
+            {
+                "url": null,
+                "label": "Next &raquo;",
+                "active": false
+            }
+        ],
+        "next_page_url": null,
+        "path": "",
+        "per_page": 5,
+        "prev_page_url": null,
+        "to": 1,
+        "total": 1
+    }
+```
+
+## Settings
 A reserved `_setting` key is used to specify any additional settings to the endpoint. Currently, only 3 settings are available: `identifiable`, `paginate`, and `auth`.
 
 ### Identifiable
